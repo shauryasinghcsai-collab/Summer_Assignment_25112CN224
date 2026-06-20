@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class array {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements you want to store: ");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+
+        // 2. Input elements into the array
+        System.out.println("Enter " + size + " elements:");
+        for (int i = 0; i < size; i++) {
+            System.out.print("Element " + (i + 1) + ": ");
+            array[i] = scanner.nextInt();
+        }
+        System.out.println("\nThe elements in the array are:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(array[i] + " ");
+        }
+        scanner.close();
+    }
+}
